@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa; /* Color de fondo claro */
+        }
+        .navbar {
+            background-color: #6f42c1; /* Púrpura oscuro para la barra de navegación */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* Texto blanco en la barra de navegación */
+        }
+        .nav-link:hover {
+            color: #e9ecef !important; /* Un blanco más suave al pasar el ratón */
+        }
+        .footer {
+            background-color: #343a40; /* Gris oscuro para el pie de página */
+            color: #ffffff; /* Texto blanco en el pie de página */
+            padding: 20px 0;
+            margin-top: auto; /* Empuja el pie de página hacia abajo */
+        }
+        .content {
+            padding: 40px 0;
+            flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Empresa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#empleados">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container content">
+        <h1 class="mb-4 text-center">Bienvenido a Nuestra pagina Andrea Roldan</h1>
+        <p class="lead text-center">Explora nuestros productos y conoce a nuestro equipo.</p>
+
+        <section id="productos" class="my-5">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto 1. Calidad y eficiencia garantizadas.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">Descripción breve del producto 2. Innovación en cada detalle.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">Descripción breve del producto 3. Soluciones a tu medida.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #6f42c1; border-color: #6f42c1;">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="empleados" class="my-5">
+            <h2 class="text-center mb-4">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="https://via.placeholder.com/150/6f42c1/ffffff?text=Empleado1" class="rounded-circle mb-3" alt="Empleado 1">
+                    <h5>Juan Pérez</h5>
+                    <p>Gerente de Ventas</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="https://via.placeholder.com/150/6f42c1/ffffff?text=Empleado2" class="rounded-circle mb-3" alt="Empleado 2">
+                    <h5>María García</h5>
+                    <p>Desarrolladora Senior</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="https://via.placeholder.com/150/6f42c1/ffffff?text=Empleado3" class="rounded-circle mb-3" alt="Empleado 3">
+                    <h5>Carlos Rodríguez</h5>
+                    <p>Diseñador Gráfico</p>
+                </div>
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="https://via.placeholder.com/150/6f42c1/ffffff?text=Empleado4" class="rounded-circle mb-3" alt="Empleado 4">
+                    <h5>Laura López</h5>
+                    <p>Atención al Cliente</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="my-5 text-center">
+            <h2 class="mb-4">Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+            <button class="btn btn-lg" style="background-color: #6f42c1; color: white;">Enviar un mensaje</button>
+        </section>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Mi Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS (Popper.js y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para actualizar el año automáticamente en el pie de página
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
